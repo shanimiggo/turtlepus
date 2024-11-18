@@ -13,6 +13,7 @@
       margin: 0;
       background-color: #f0f8ff;
       font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent default scrolling behavior */
     }
     #image-container {
       position: relative;
@@ -32,9 +33,9 @@
 </head>
 <body>
   <div id="image-container">
-    <img id="image1" class="active" src="./turtlepus1.png" alt="Turtlepus Uno">
-    <img id="image2" src="./turtlepus2.png" alt="Turtlepus Duo">
-    <img id="image3" src="./turtlepus3.png" alt="Turtlepus Thres">
+    <img id="image1" class="active" src="./turtlepus1.png" alt="Turtlepus 1">
+    <img id="image2" src="./turtlepus2.png" alt="Turtlepus 2">
+    <img id="image3" src="./turtlepus3.png" alt="Turtlepus 3">
   </div>
 
   <script>
@@ -47,8 +48,18 @@
       images[currentImageIndex].classList.add('active');
     }
 
-    // Attach the click event to the entire body
-    document.body.addEventListener('click', switchImage);
+    // Handle scroll and click events
+    function handleInteraction(event) {
+      // Prevent the default scroll action (optional for full control)
+      if (event.type === "scroll") {
+        window.scrollTo(0, 0); // Keep the page at the top
+      }
+      switchImage();
+    }
+
+    // Add event listeners for click and scroll
+    document.body.addEventListener('click', handleInteraction);
+    document.body.addEventListener('scroll', handleInteraction);
   </script>
 </body>
 </html>
