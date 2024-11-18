@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turtlepus Viewer</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+      font-family: Arial, sans-serif;
+    }
+    #image-container {
+      position: relative;
+      width: 60%;
+      max-width: 600px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: none;
+    }
+    img.active {
+      display: block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <div id="image-container">
+    <img id="image1" class="active" src="turtlepus1.png" alt="Turtlepus 1">
+    <img id="image2" src="turtlepus2.png" alt="Turtlepus 2">
+  </div>
+  <button onclick="switchImage()">Switch Image</button>
+
+  <script>
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('#image-container img');
+
+    function switchImage() {
+      images[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].classList.add('active');
+    }
+  </script>
+</body>
+</html>
