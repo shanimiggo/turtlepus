@@ -7,7 +7,7 @@ Dive into this fun project to experience interactive visuals and learn more abou
 ---
 
 ## 🎨 Demo
-Click [here](#) to see Turtlepus in action (replace with your live demo link).  
+Click [here](https://shanimiggo.github.io/turtlepus/) to see Turtlepus in action (replace with your live demo link).  
 Or clone the repo and run it locally to explore its adorable transformations.
 
 ---
@@ -27,22 +27,6 @@ Ensure you have the following:
 - A modern web browser.
 - Basic knowledge of HTML and CSS (optional, for customization).
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/turtlepus.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd turtlepus
-   ```
-3. Open `index.html` in your browser:
-   ```bash
-   open index.html
-   ```
-
----
 
 ## 🎛 Customization
 
@@ -84,5 +68,4 @@ This project is licensed under the MIT License. See `LICENSE` for details.
 
 ## 💬 Contact
 Have questions or ideas? Reach out!  
-- **GitHub**: [@yourusername](https://github.com/yourusername)  
-- **Email**: yourname@example.com
+- **GitHub**: [@shanimiggo](https://github.com/shanimiggo)  
