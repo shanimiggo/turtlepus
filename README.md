@@ -37,17 +37,6 @@ Ensure you have the following:
 ### Changing Styles
 Modify the CSS in the `<style>` section of `index.html` to change the theme, fonts, or layout.
 
----
-
-## 📷 Screenshots
-![Screenshot 1](https://via.placeholder.com/800x400)  
-*The enchanting Turtlepus in one of its many forms!*
-
-![Screenshot 2](https://via.placeholder.com/800x400)  
-*Vibrant and playful UI for a fun user experience.*
-
----
-
 ## 🌟 Inspiration
 The Turtlepus was inspired by the simple joy of combining two unique creatures. This project blends creativity, humor, and code to create a delightful interactive experience.
 
